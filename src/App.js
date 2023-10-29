@@ -4,6 +4,7 @@ import Order from './components/Order';
 import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
 import BookingPage from './components/BookingPage';
+import ReservationSuccess from './components/ResservationSuccess';
 import Footer from './components/Footer';
 import { Routes, Route } from "react-router-dom";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/reservation" element={<BookingPage />}></Route>
         <Route path="/order" element={<Order />}></Route>
+        <Route path="/reservation-success" element={<ReservationSuccess />}></Route>
       </Routes>
       <Footer/>
     </div>

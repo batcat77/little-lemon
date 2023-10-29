@@ -1,5 +1,7 @@
 import BookingFrom from "./BookingForm";
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider } from "@chakra-ui/react";
+import { AlertProvider } from "../context/alertContext";
+import Alert from "./Alert";
 
 function BookingPage() {
   return (
@@ -8,7 +10,10 @@ function BookingPage() {
         <h2>Reserve a Table</h2>
       </div>
       <ChakraProvider>
-        <BookingFrom/>
+        <AlertProvider>
+          <BookingFrom/>
+          <Alert />
+        </AlertProvider>
       </ChakraProvider>
     </main>
   )
